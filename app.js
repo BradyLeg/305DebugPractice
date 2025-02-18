@@ -56,7 +56,7 @@ app.post('/add-task', (req, res) => {
         return;
     }
 
-    if (!["low", "medium", "high"].includes(task.priority)) {
+    if (!["low", "medium", "highest"].includes(task.priority)) { //naming convention error
         res.send("Invalid Priority!");
         return;
     }
